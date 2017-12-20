@@ -2,20 +2,13 @@ var fs = require('fs');
 
 function canHandleRequest(request)
 {
-  return  request.url.startsWith('/static/') || request.url === '/index1.html';
+  return  request.url.startsWith('/static/') ;
 }
 exports.canHandleRequest = canHandleRequest;
 
 function staticContentHandler(request,response)
 {
-
   var url = request.url.substr(1);
-
-  if(url == 'index1.html')
-  {
-    url = 'static/index1.html'
-  }
-
   fs.readFile(url,function(error,data){
     if(error)
     {
