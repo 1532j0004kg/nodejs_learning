@@ -2,6 +2,14 @@ var express = require('express');
 
 var app = express();
 
+
+app.use('/static',express.static("static"));
+
+app.get('/',function(request,response)
+  {
+    response.end("hello wes express !!!");
+  });
+
 app.get('/wes',function(request,response)
   {
     response.end("hello wes express !!!");
