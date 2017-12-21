@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "10 days free trial.",
+  "main": "express-server.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-favicon": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1532j0004kg/nodejs_learning.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1532j0004kg/nodejs_learning/issues"
+  },
+  "homepage": "https://github.com/1532j0004kg/nodejs_learning#readme"
+}
